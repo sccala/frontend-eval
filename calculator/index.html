@@ -6,21 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body>
+  <body >
     <h3>Principal loan amount</h3>
-    $<input type="number" />.00
+    $<input id="loanamount" type="number" />.00
     <h3>Interest rate (annual)</h3>
-    <input type="number" />%
+    <input id="interest" type="number" />%
     <h3>Length of loan</h3>
-    <input type="number" />Years
+    <input id="years" type="number" />Years
     <button>Calculate</button>
     <h2>Your monthly mortgage payment will be <span>XXX</span></h2>
   </body>
 </html>
 
 <script>
+  const loan=document.getElementById('#loanamount').value
+  const interest=document.getElementById('#interest').value
+  const year=document.getElementById('#years').value
   function calculator(loan, interest, year) {
-      const yearlyPayments=year*12  
-      loan(interest(1+interest)^year/((1+interest)^year)-1)
+    const yearlyPayments = year * 12
+    loan(interest(1 + interest) ^ (year / ((1 + interest) ^ year) - 1))
   }
 </script>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>faq components</title>
+</head>
+<body class='faqcomponents'>
+    <div class='questions'><a>▷</a>this is questions</div>
+    <div class='answers'>this is answers</div>
+</body>
+</html>
+<style>
+    .faqcomponents{
+        border: solid 1px black;
+        padding: 1px;
+    }
+</style>
+
+
+<script>
+    const dataset=[
+  {
+    question: "How many bones does a cat have?",
+    answer: "A cat has 230 bones - 6 more than a human",
+  },
+  {
+    question: "How much do cats sleep?",
+    answer: "The average cat sleeps 12-16 hours per day",
+  },
+  {
+    question: "How long do cats live",
+    answer: "Outdoor cats live 5 years on average. Indoor\ncats live 15 years on average.",
+  },
+]
+
+const questions = document.getElementsByClassName('.questions')
+const answers = document.getElementsByClassName('.answers')
+ 
+function showQuestions(e){
+    const targetQuestion= e.targetQuestion
+}
+
+</script>
